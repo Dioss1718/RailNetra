@@ -5,7 +5,7 @@ import Button from '../../components/ui/Button';
 import SummaryPanel from './components/SummaryPanel';
 import FilterPanel from './components/FilterPanel';
 import BatchProcessingPanel from './components/BatchProcessingPanel';
-import SuggestionsList from './components/SuggestionsList';
+import SuggestionList from './components/SuggestionList';
 
 const AISuggestions = () => {
   const [suggestions, setSuggestions] = useState([]);
@@ -328,7 +328,7 @@ const AISuggestions = () => {
           />
 
           {/* Suggestions List */}
-          <SuggestionsList
+          <SuggestionList
             suggestions={filteredSuggestions}
             selectedSuggestions={selectedSuggestions}
             onSelectionChange={setSelectedSuggestions}
